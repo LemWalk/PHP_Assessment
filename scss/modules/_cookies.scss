@@ -1,0 +1,137 @@
+#cookie-lo{
+    @extend %cookie-lo;
+}
+
+.btn-manage{
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 0 10px;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: normal;
+    background-color: #75788a;
+    z-index: 1000000;
+    &:hover{
+        background-color: #999aa2;
+    }
+    margin: 0;
+    border-top-right-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 0.4px;
+}
+
+
+.cookie-overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.7);
+    z-index: 10001;
+    overflow: hidden;
+}
+
+.cookie-overlay.hidden{
+    display: none;
+}
+
+.cookie-menu{
+    display: flex;
+    background-color: #fff;
+    max-width: 600px;
+    z-index: 1001;
+    opacity: 1;
+    border-radius: 5px;
+}
+
+
+.cookie-title{
+font-size: 24px;
+color: $black-light;
+text-align: start;
+letter-spacing: 0.4px;
+padding: 20px;
+margin: 0;
+font-weight: 500;
+}
+
+.cookie-text{
+font-size: 16px;
+line-height: 30px;
+text-align: start;
+letter-spacing: 0.4px;
+color: #666;
+padding: 20px;
+margin: 0 0 30px 0;
+opacity: 0.9;
+}
+
+.cookie-hr{
+    margin: 0;
+    opacity: 0.3;
+}
+
+.cookie-btns{
+    display: flex;
+    flex-direction: column; 
+    width: 100%; 
+    margin-bottom: 10px;
+}
+
+.cookie-btn-outer{
+margin: 10px 20px;
+}
+
+.btn-acc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #926fb1;
+    color: #fff;
+    font-size: 17px;
+    line-height: 35px;
+    letter-spacing: 0.4px;
+    padding: 5px 15px;
+    margin: 0 20px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    width: auto;
+    &:hover{
+        background-color: #7e57a0;
+    }
+}
+
+.btn-ch-set{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #999aa2;
+    color: #fff;
+    font-size: 17px;
+    line-height: 35px;
+    letter-spacing: 0.4px;
+    padding: 5px 15px;
+    margin: 0 20px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    width: auto;
+    &:hover{
+        background-color: #84858f;
+    }
+}
+
+.policy-text{
+    color: #121419;
+    &:hover{
+        text-decoration: underline;
+    }
+}

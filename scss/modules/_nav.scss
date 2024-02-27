@@ -1,0 +1,159 @@
+
+#nav-lo{
+    @extend %nav-lo;
+}
+
+.header{
+    background-color: #fff;
+    visibility: visible;
+}
+
+
+.nav-top-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.right-block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-height: 70px;
+    float: right;
+    clear: both;
+    gap: 20px;
+}
+
+
+.nav-hidden{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    display: none;
+}
+
+
+#search-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $grey-light;
+    opacity: 90%;
+    border-radius: 1px;
+    margin: 20px 0px;
+    align-items: center;
+    padding-right: 10px ;
+    height: 40px;
+    border: solid 2px $grey-light;
+    outline: none;
+    box-shadow: 0px 0px 3px 0.5px rgba($color: #555, $alpha: 0.6);
+}
+
+#focus-blue{
+    height: 53px;
+    border: solid transparent 1px;
+    width: auto;
+    &:focus {
+      border: #5bc0de solid 1px;
+        outline: 0;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(91,192,222,.6);
+        }
+}
+    
+input[type=text]{
+    background-color: inherit;
+    padding-left: 15px;
+    width: 90%;
+    outline: none;
+    border: 0;
+    }
+
+
+.search-bar-hidden{
+    display: none;
+    background-color: #fff;
+    border: solid #ccc 1px ;
+    border-radius: 0px 3px 3px 0px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    margin: 15px 0px;
+    justify-content: right;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+
+
+.search-input-hidden{
+    display: flex;
+    align-items: center;
+    width: auto;
+    max-width: 240px;
+}
+
+//====== Burger Menu =================
+
+.burger-menu{
+    background-color: $black-light;
+    border-radius: 3px;
+    height: 55px;
+    width: 65px;
+    z-index: 98;
+    cursor: pointer;
+}
+
+.burger-inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+    height: 100%;
+}
+
+.ham-bar{
+    width: 50%;
+    height: 4px;
+    position: relative;
+    background-color: #fff;
+    z-index: 99;
+    transition: all 0.4s ease-in-out;
+}
+
+.burger-menu.active .bar-top{
+    transform: translateY(10px) rotate(-45deg);
+    }
+    
+.burger-menu.active .bar-mid{
+    opacity: 0;
+    }
+    
+.burger-menu.active .bar-bot{
+    transform: translateY(-10px) rotate(45deg);
+    }
+
+//================================
+
+// .sticky{
+//         transform: translateY(-100%);
+// }
+
+.sticky{
+    transform: translateY(-100%);
+}
+
+
+// In CSS, define the styles for the sticky class
+.nav-container{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 10000;
+    transition: all 0.6s ease-in-out;
+}
+

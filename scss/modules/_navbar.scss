@@ -1,0 +1,371 @@
+
+//================================
+
+#main-nav-lo{
+    @extend %main-nav-lo;
+}
+
+
+.main-nav{
+    background-color:$black-light;
+    display: none;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+list-style: none;
+padding: 0px;
+margin: 0;
+}
+
+.nav-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 130px;
+}
+
+
+.nav-p1{
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    color: #fff;
+    }
+    
+    .nav-p2{
+        font-size: 20px;
+        padding: 0; 
+        margin: 0;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+nav ul li a{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 25px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    .nav-dropdown-item:hover{
+        text-decoration:underline ;
+    }    
+}
+
+.dropdown{
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    display: none
+}
+
+
+.dropdown li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+
+.dropdown li a{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    text-align: left;
+}
+
+
+
+//========== navbar item hovers============
+
+.nav-bar-item-blue-pale:hover{
+    background-color: $blue-pale-primary;
+    .nav-icon-blue-pale{
+        color: #fff;
+    }
+    
+    &::after{
+        display: flex;
+        position: absolute;
+        width: 130px;
+        content: "";
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: solid transparent;
+        border-width: 45px 65px 0 65px;
+        border-top-color:$blue-pale-primary;
+        z-index: 700;
+    }
+}
+
+.nav-bar-item-blue:hover{
+    background-color: $blue-primary;
+    .nav-icon-blue {
+        color: #fff;
+    }
+    &::after{
+        display: flex;
+        position: absolute;
+        width: 130px;
+        content: "";
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: solid transparent;
+        border-width: 45px 65px 0 65px;
+        border-top-color:$blue-primary;
+        z-index: 700;
+    }
+}
+
+.nav-bar-item-green:hover{
+    background-color: $green-primary;
+    .nav-icon-green {
+        color: #fff;
+    }
+    &::after{
+        display: flex;
+        position: absolute;
+        width: 130px;
+        content: "";
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: solid transparent;
+        border-width: 45px 65px 0 65px;
+        border-top-color:$green-primary;
+        z-index: 700;
+    }
+}
+
+.nav-bar-item-red:hover{
+    background-color: $red-primary;
+    .nav-icon-red {
+        color: #fff;
+    }
+    &::after{
+        display: flex;
+        position: absolute;
+        width: 130px;
+        content: "";
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: solid transparent;
+        border-width: 45px 65px 0 65px;
+        border-top-color:$red-primary ;
+        z-index: 700;
+    }
+}
+
+.nav-bar-item-purple:hover{
+    background-color: $purple-primary;
+    .nav-icon-purple{
+        color: #fff;
+        }
+        &::after{
+            display: flex;
+        position: absolute;
+        width: 130px;
+            content: "";
+            width: 0;
+            height: 0;
+            margin: 0;
+            padding: 0;
+
+        border: solid transparent;
+        border-width: 45px 65px 0 65px;
+            border-top-color:$purple-primary;
+            z-index: 700;
+        }
+    }
+
+
+.nav-bar-item-red-pink:hover{
+    background-color: $red-pink-primary;
+    .nav-icon-red-pink {
+        color: #fff;
+    }
+    &::after{
+        display: flex;
+        position: absolute;
+        width: 130px;
+        content: "";
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: solid transparent;
+        border-width: 45px 65px 0 65px;
+        border-top-color:$red-pink-primary ;
+        z-index: 700;
+    }
+}
+
+.nav-bar-item-orange:hover{
+    background-color: $orange-primary;
+    .nav-icon-orange {
+        color: #fff;
+    }
+    &::after{
+        display: flex;
+        position: absolute;
+        width: 130px;
+        content: "";
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: solid transparent;
+        border-width: 45px 65px 0 65px;
+        border-top-color:$orange-primary ;
+        z-index: 700;
+    }
+}
+
+//======== Dropdown Hover Colors ========
+
+nav ul li:hover ul.dropdown {
+    display:flex;
+    flex-wrap: wrap;
+    height:auto;
+    justify-content: center;    
+    align-items: center;
+    }
+
+    nav ul li:hover ul.dropdown > *{
+
+        flex: 1 1 33%;
+        font-size: 20px;
+        padding: 15px 40px 15px 0px;
+        justify-content: left;
+        align-items: baseline;
+        text-align: left;  
+    }
+
+    .container-nav{
+            padding: 0 7%;
+        }
+    
+    
+
+
+
+nav ul li:hover ul.dd-blue-pale{
+    background-color: $blue-pale-secondary;
+    padding-bottom: 30px;
+    &::before{
+        content:"Our Bespoke Software Services";
+        width: 100%;
+        margin: 20px 0px;
+        font-size: 32px;
+        color: #fff;
+        padding-top: 40px;
+    }
+    }
+
+
+nav ul li:hover ul.dd-blue{
+    background-color: $blue-secondary;
+    padding-bottom: 30px;
+    &::before{
+        content:"Our IT Support Services";
+        width: 100%;
+        margin: 20px 0px;
+        font-size: 32px;
+        color: #fff;
+        padding-top: 40px;
+    }
+        }
+
+nav ul li:hover ul.dd-green{
+    background-color: $green-secondary;
+    padding-bottom: 30px;
+    &::before{
+        content:"Our Digital Marketing Services";
+        width: 100%;
+        margin: 20px 0px;
+        font-size: 32px;
+        color: #fff;
+        padding-top: 40px;
+    }
+    }    
+
+    nav ul li:hover ul.dd-red{
+    background-color: $red-secondary;
+    padding-bottom: 30px;
+    &::before{
+        content:"Our Telecoms Services";
+        width: 100%;
+        margin: 20px 0px;
+        font-size: 32px;
+        color: #fff;
+        padding-top: 40px;
+    }
+    } 
+
+nav ul li:hover ul.dd-purple{
+    background-color: $purple-secondary;
+    padding-bottom: 30px;
+    &::before{
+        content:"Our Web Design Services";
+        width: 100%;
+        margin: 20px 0px;
+        font-size: 32px;
+        color: #fff;
+        padding-top: 40px;
+    }
+    } 
+
+nav ul li:hover ul.dd-red-pink{
+    background-color: $red-pink-secondary;
+    padding-bottom: 30px;
+    &::before{
+        content:"Our Cyber Security Services";
+        width: 100%;
+        margin: 20px 0px;
+        font-size: 32px;
+        color: #fff;
+        padding-top: 40px;
+    }
+    } 
+
+nav ul li:hover ul.dd-orange{
+    background-color: $orange-secondary;
+    padding-bottom: 30px;
+    &::before{       
+        content:"Our Developer Course Services";
+        width: 100%;
+        margin: 20px 0px;
+        font-size: 32px;
+        color: #fff;
+        padding-top: 40px;
+    }
+    } 
+    
+
+#dd-title{
+        color: #fff;
+        display: block;
+        position: relative;
+        float: left;
+        font-size: 40px;        
+    }

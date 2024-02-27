@@ -1,0 +1,120 @@
+
+#hero-lo{
+    @extend %hero-lo;
+}
+
+#hero-slider-lo{
+    @extend %hero-slider-lo;
+}
+
+.hero-slider{
+    display: block;
+    height: 550px;  
+    }
+
+.hero-container{   
+    color: #fff;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.hero-item{
+    a{
+        padding: 0;
+    }
+}
+
+.hero-title{
+    display: flex;
+font-size: 40px;
+margin: 10px;
+}
+
+.hero-text{
+    display: flex;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+// ========= slick plugin css =========
+
+.slick-dots{
+    bottom: 50px;
+}
+
+.slick-initialized .slick-slide {
+    display: flex;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: white;
+}
+
+.slick-track{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+}
+
+.slick-dots li button:before {
+    font-size: 14px;
+    color: #fff;
+}
+
+.test-slide{    
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.flex-central{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-1{
+    background-image:linear-gradient(270deg,transparent 25%,#000), url(../img/thumbnails/img1.png);
+    background-size: cover;
+}
+
+.slide-2{
+    background-image:linear-gradient(270deg,transparent 25%,#000), url(../img/thumbnails/img2.png);
+    background-size: cover;
+}
+
+.slide-3{
+    background-image:linear-gradient(270deg,transparent 25%,#000), url(../img/thumbnails/img3.png);
+    background-size: cover;
+}
+
+.slide-4{
+    background-image:linear-gradient(270deg,transparent 25%,#000), url(../img/thumbnails/img4.png);
+    background-size: cover;
+}
+
+.slide-5{
+    background-image:linear-gradient(270deg,transparent 25%,#000), url(../img/thumbnails/img5.png);
+    background-size: cover;
+}
+
+.slide-6{
+    background-image:linear-gradient(270deg,transparent 25%,#000), url(../img/thumbnails/img6.png);
+    background-size: cover;
+}
+
+.slide-7{
+    background-image:linear-gradient(270deg,transparent 25%,#000), url(../img/thumbnails/img7.png);
+    background-size: cover;
+}

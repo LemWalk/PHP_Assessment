@@ -1,0 +1,428 @@
+
+// ===== Home / offices =========
+
+#home-top-lo{
+    border-top: 1px solid #333645;
+    box-shadow: 0 5px 35px rgba(0,0,0,.1);
+    @extend %home-top-lo;
+}
+
+.home-top-inner{    
+    display: none;
+}
+
+.home-top-text{
+    color: $black-mid;
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 14px 0 13px;
+}
+
+// ===== Contact Page Title =====
+
+#page-title-lo{
+    @extend %page-title-lo;
+}
+
+.contact-title-box{
+    background-color: $black-mid;
+    padding: 24px 0px;
+    margin: 0 0 50px 0;
+}
+
+.contact-title-lrg{
+    font-size: 2.25rem;
+    font-weight: 400;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+//====== Offices ============
+
+// .office-container{
+//     display: flex;
+//     flex-direction: column;
+// }
+
+#office-cards-lo{
+    @extend %office-cards-lo;
+}
+
+.office-inner{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0;
+    margin-top: 20px;    
+    margin-bottom: 40px;
+}
+
+.office-block{
+    display: flex;
+    flex-direction: column;    
+    border-radius: 15px;
+}
+
+.img-office{
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    display: flex;
+}
+
+.office-top{
+    box-shadow: 0 3px 35px rgba(0,0,0,.1);
+}
+
+.office-title{
+    margin-bottom: 15px;
+}
+
+.office-title-link{
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 400;
+    color: #121419;
+    padding: 0;
+    margin: 0;
+    &:hover{
+
+        text-decoration: underline;
+    }
+}
+
+.office-address{
+    font-size: 16px;
+    line-height: 22px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+
+.office-info{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border: solid #ccc 1px;
+}
+
+.office-telephone-number{
+    font-size: 26px;
+    line-height: 28px;
+    color: #926fb1;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.office-block{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-office-box{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.btn-office{
+    font-size: 0.9rem;
+    border-radius: 3px;
+    padding: 5px 30px;
+    color: #fff;
+    background-color: #926fb1; 
+    &:hover{
+        background-color: #7e57a0;
+    }
+}
+
+.office-map{
+    display: flex;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.img-office-map{
+    object-fit: cover;
+    border-radius: 0 0 15px 15px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    
+}
+
+//===== Contact Info =============
+
+#business-contact-lo{
+    @extend %business-contact-lo;
+}
+
+
+.business-contact-details{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.business-contact-inner{
+    transition: all 1s;
+}
+
+.business-contact-inner.active{
+    padding-bottom: 30px;
+}
+
+.sales-email{
+    padding: 0;
+}
+
+.contact-email{
+    color: #926fb1;
+    font-size: 26px;
+    line-height: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0;    
+    &:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.contact-text{
+    color: $black-mid;
+    font-weight: 600;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.875rem;
+}
+
+// .out-of-hours-box{
+    
+// }
+
+.out-of-hours-title-box{
+    @extend .contact-text;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    text-decoration: none;
+    align-items: center;
+    width: max-content;
+    padding-bottom: 30px;
+    &:hover{
+        .out-of-hours-title{
+            text-decoration: underline;
+        }
+        cursor: pointer;
+    }
+}
+
+.out-of-hours-title{
+    margin: 0;
+}
+
+
+.out-of-hours-details{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    transition: all 1s;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.out-of-hours-details.active{
+    max-height: 600px;
+    
+}
+
+
+.out-of-hours-text-light{
+    font-size: 16px;
+    line-height: 1.875rem;
+    color: #666;
+    font-weight: 400;
+    margin: 0;
+    }
+
+//========== Contact form =========
+
+#contact-form-lo{
+    @extend %contact-form-lo;
+}
+
+.contact-form{
+    background-color: #e6e7e9;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+.form-inner{
+    width: 100%;
+    display: flex;
+    flex-direction: column
+}
+
+.input-boxes-contact{
+    display: flex;
+    flex-direction: column;
+}
+
+#form-input-telephone, #form-input-company-name{
+    @extend.form-input-box;
+}
+
+#form-input-message{
+    @extend.form-input-box;
+    min-height: 88px;
+    padding-top: 10px;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #555;
+}
+
+.small-print{
+    margin-bottom: 30px;
+}
+
+.small-print-text{
+    margin: 0;
+    font-weight: 600;
+    font-size: 11px;
+    color: $black-mid;
+}
+
+.contact-bottom-row{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+}
+
+.field-text{
+    font-size: 85%;
+    color: $black-mid;
+    margin: 0 ;
+}
+
+//=======
+
+@import 'forms';
+
+.checkbox-2{
+    @extend.checkbox;
+};
+
+.custom-tickbox-2{
+    @extend.custom-tickbox;
+};
+
+.tickbox-2{
+    @extend.tickbox;
+};
+
+.form-text-2{
+    @extend.form-text
+};
+
+
+//========= Error / Success Messages =============
+
+.submit_message_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 0px;
+    font-size: 1rem;
+    align-items: center;
+    margin-bottom: 10px
+
+};
+
+
+.hidden{
+    display: none !important;
+}
+
+
+.submit-successful{
+    display: flex;
+    color: #fff;
+    background-color: #2ecc71;;
+    width: 100%;
+    padding: 15px;
+    margin: 10px;   
+    border-radius: 1px;
+    align-items: center;
+    justify-content: space-between;
+};
+
+.submit_message_close{
+    display: flex  !important;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 25px;
+    background-color: $green-primary;
+    &:hover{
+    background-color: #74ce99;
+    }
+    padding: 5px;
+border: 1px #fff solid;
+border-radius: 2px;
+}
+
+.error-input{
+    border: 3px solid #a94442 !important;
+}
+
+// input:invalid {
+//     border: 1px solid #a94442 !important;
+//   }
+
+
+
+.submit-failed{
+display: flex;
+color: #a94442;
+background-color: #e98989;
+border: solid 1px #e47b7b;
+width: 100%;
+padding: 15px;
+margin: 10px;
+text-align: left;
+border-radius: 1px;
+justify-content: space-between;
+align-items: center
+};
+
+.submit_message_close_error{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 25px;
+    background-color: #e98989;
+    &:hover{
+    background-color: #e9b2b2;
+    ;
+    }
+    padding: 5px;
+border: 1px #d45f5f solid;
+border-radius: 2px;
+}
+
+
+
+
+

@@ -1,0 +1,485 @@
+//========= Base Extends  ==============
+
+@include mq(medium) {
+    main{
+        margin-top: 110px;
+    }
+}
+
+@include mq(large) {
+    .container-inner{
+        padding: 0 5%;
+    }
+
+    main{
+        margin-top: 211px;
+    }
+    
+}
+
+
+//==========Footer Bot Layout =================
+
+%footer-bot-lo {
+
+    @include mq(medium) {
+                display:flex;
+                flex-direction: row;
+                justify-content: left;
+                align-items: baseline;
+                .sm-dis{
+                    display: flex;                
+                }
+                p, ul {
+                    padding: 3px;
+                    margin: 0;
+                }
+    }
+
+}
+
+//==========Footer Layout =================
+
+%footer-lo{
+    @include mq(small) {
+        .socials{
+            display: flex;
+            flex-direction: row;
+        }
+        .social-links{
+            width: 65px;
+        }
+    }
+
+    @include mq(medium) {
+        .footer-col{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .footer-col>*{
+            flex: 1 1 50%;
+        }
+
+    }
+
+    @include mq(large) {
+        .footer-col {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .footer-col>*{
+            flex: 1 1 25%;
+        }
+    }
+    @include mq(extra-large) {
+    .company-info{
+        float: left;
+        clear: right;
+        }
+
+    }
+}
+
+
+//========== Form Layout =================
+
+%form-lo{
+
+    @include mq(large) {
+        .input-boxes{
+            display: flex;
+            flex-direction: row;
+            gap: 35px;
+        }
+
+        .input-boxes > *{
+            flex: 1 1 50%;
+        }
+    }
+}
+
+//==========News Layout =================
+
+%news-lo{
+
+    @include mq(medium) {
+        .news-col{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .news-col > *{
+            flex: 1 1 calc(50% - 30px);           
+        }
+        .med-dis{
+            display: none;
+        }
+        .view-outer{
+            display: none;
+        }
+        .view-outer-hidden{
+            display: flex;
+        }
+    }
+
+        
+
+    
+    @include mq(extra-large) {
+        .med-dis{
+            display: flex;
+        }
+        .news-col{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .news-col > *{
+            flex: 1 1 calc(33% - 60px);           
+        }
+    }
+}
+
+//============ Company Intro Layout =================
+
+%company-intro-lo{
+    @include mq(medium) {
+        .intro-btns{
+            display: flex;
+            flex-direction: row;
+        }
+        
+}
+
+    @include mq(large) {
+        .intro-container{
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            
+        }
+        .intro-container>*{
+            flex: 1 1 50%;
+        }
+
+        .intro-btns{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    @include mq(extra-large) {
+        .intro-btns{
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+}
+
+//========== Our Services Layout ==============
+
+%our-services-lo {
+    @include mq(medium){
+        .service-block-bot{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .service-block-bot>*{
+            flex: 1 1 calc(50% - 60px);
+            
+    }
+    .view-outer-hidden{
+        display: flex;
+    }
+
+        .view-outer{
+            display: none;
+    }
+}
+
+    @include mq(large){
+        .service-block-top{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .service-block-top>*{
+            flex: 1 1 calc(33% - 60px);
+        }
+
+    }
+
+    @include mq(extra-large){
+        .service-block-bot{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .service-block-bot>*{
+            flex: 1 1 calc(25% - 60px);
+            }
+        }
+    
+    }
+
+//========== Hero slider layout ==================
+
+%hero-slider-lo{
+    @include mq(large){
+        .slick-initialized .slick-slide {
+            display: block;
+        }
+    }
+}
+
+
+%hero-lo{
+    @include mq(medium) {
+        .hero-text{
+            margin: 10px auto;
+            width: 70%;
+        }
+    }
+
+
+    @include mq(large){
+
+        .hero-container{
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .hero-item{
+            display: flex;
+            position: relative;
+            left: 0;
+            width: 100%;
+            align-items: center;
+        }
+
+        .hero-title{
+        font-size: 64px; 
+        text-align: left;
+        align-items: flex-end;
+        margin: 100px 0px 20px 0px;
+        }
+        .hero-text{
+        font-size: 26px;
+        text-align: left;
+        margin: 10px 0px;
+        width: 70%;
+        line-height:40px;
+        }
+    }
+}
+
+
+
+//============== Nav-Bar =======================
+
+%main-nav-lo{
+    @include mq(large) {
+        display: block
+    }
+
+    @include mq(extra-large) {
+        .nav-item{
+            width: 170px;
+        }
+
+    .nav-bar-item-blue-pale:hover{
+    &::after{               
+        border-width: 45px 85px 0 85px;
+    }    
+}
+.nav-bar-item-blue:hover{
+    &::after{               
+        border-width: 45px 85px 0 85px;
+    }    
+}.nav-bar-item-red:hover{
+    &::after{               
+        border-width: 45px 85px 0 85px;
+}    
+}.nav-bar-item-green:hover{
+    &::after{               
+        border-width: 45px 85px 0 85px;
+}    
+}.nav-bar-item-purple:hover{
+    &::after{               
+        border-width: 45px 85px 0 85px;
+}    
+}.nav-bar-item-red-pink:hover{
+    &::after{               
+        border-width: 45px 85px 0 85px;
+}    
+}.nav-bar-item-orange:hover{
+    &::after{               
+        border-width: 45px 85px 0 85px;
+}    
+}
+    }   
+
+}
+
+
+//========= Nav =============================
+
+%nav-lo{
+    @include mq(medium) {
+        #search-bar{
+            display: none;
+        }
+        .search-bar-hidden{
+            display: flex;
+        }
+        .icn-black-light{
+            display: none;
+        }
+        .icn-grey{
+            border-radius: 0px 3px 3px 0px;
+        }
+    }
+    @include mq(large){
+        .nav-hidden{
+            display: flex;
+        }
+        .search-input-hidden{
+            display: none;
+        }
+    }
+
+    @include mq(extra-large){
+        .search-input-hidden{
+            display: flex;
+    }
+}
+
+}
+
+
+// ====== Side Nav ==================
+
+%side-nav-lo{
+	@include mq(large){
+
+			.margin-top{
+					margin-top: 0;
+			}
+			.hidden-lrg{
+				display: none;
+			}
+			.lrg-disapp{
+				display: none;
+			}
+			.lrg-reapp{
+				display: flex;
+			} 
+        
+        }
+    }
+//======== Cookies =====================
+
+%cookie-lo{
+    @include mq(large) {
+
+        .cookie-btns{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .cookie-btns*{
+            flex: 1 1 calc(50%);
+            }
+        }
+    }
+
+
+//====================================
+// ====== Contact Us Page ============
+//====================================
+
+
+// ===== Home / office bar ===========
+
+%home-top-lo{
+    @include mq(medium) {
+        .home-top-inner{
+            display: block;
+        }
+    }
+}
+
+
+// ===== Page Title ==================
+
+%page-title-lo{
+    @include mq(large){
+            background-color: transparent;
+        .contact-title-lrg{
+            color: $black-mid;
+        }
+    }
+}
+
+
+// ===== Office Cards =================
+
+%office-cards-lo{
+    @include mq(large){
+        .office-inner{
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .office-inner>*{
+            flex: 1 1 calc(50% - 30px);
+        }
+    }
+}
+
+// ===== Business Information =========
+
+%business-contact-lo{
+    @include mq(extra-large){
+
+        .business-contact-details{
+            width: 34%;
+            float: right;
+            clear: both;
+            padding-left: 30px;
+        }
+
+        .contact-form{
+            width: 66% ;
+        }
+
+    }
+}
+
+
+// ===== Contact Form ==================
+
+%contact-form-lo{
+    @include mq(small) {
+        .contact-bottom-row{
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
+
+    @include mq(large){
+        .input-boxes-contact{
+            flex-direction: row;
+            flex-wrap: wrap;
+            column-gap: 30px;
+        }
+
+        .input-boxes-contact>*{
+            flex: 1 1 calc(50% - 15px);
+        }
+
+    }
+}

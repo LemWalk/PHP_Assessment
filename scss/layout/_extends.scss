@@ -1,0 +1,38 @@
+
+//flex row
+.container-dark{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	background-color: $black-light;
+	color: white;
+}
+
+
+    
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+//flex column
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+//flex wrap
+
+.flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+

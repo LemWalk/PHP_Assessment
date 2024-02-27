@@ -1,0 +1,125 @@
+#form-lo{
+  @extend %form-lo;
+}
+
+form{
+    background-color: $grey-light;
+    padding-bottom: 50px;
+}
+
+
+
+form h2 {
+  color: $black-light;
+    padding: 50px 0px 15px;
+    font-size: 32px;
+    margin: 0;
+    font-weight: 500;
+
+}
+
+.input-boxes{
+  display: flex;
+  flex-direction: column;
+}
+
+.data-input{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    row-gap: 10px;
+    font-weight: bold;
+    color:$black-light;
+}
+
+
+//====== Template for form input boxes ==============
+
+.form-input-box{
+  border: solid rgba($color: #999, $alpha: 0.4) 1px;
+border-radius: 2px;
+background-color: #fff;
+padding: 5px 15px;
+border: 1px solid $grey-light;
+height: 50px;
+width: 100%;
+&:focus {
+  border: #5bc0de solid 1px;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(91,192,222,.6);
+  width: 99.5%;
+  }
+}
+
+#form-input-name, #form-input-email{
+  @extend.form-input-box
+}
+
+
+
+  .checkbox{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    color:$black-mid;
+    font-weight: 300;
+    padding: 15px 0px;
+    gap: 20px;
+    line-height: 30px; 
+    &:hover{
+      cursor: pointer;
+    } 
+}
+
+.tickbox{
+  display: none;
+}
+
+.custom-tickbox{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  accent-color:$black-mid;
+  border: solid 3px $black-light;
+  border-radius: 3px;
+  background: transparent;
+  height: 32px;
+  width: 32px;
+  flex-shrink: 0;
+    margin: 0px;
+    &:hover{
+      cursor: pointer;
+    } 
+}
+
+.custom-tickbox::after{
+  display: none;
+  content: '\2714';
+  transform: scale(1.2);
+  color: #fff;
+}
+
+.custom-tickbox.active{
+  background-color: $black-light;
+  &::after{
+    display: flex;
+  }
+}
+
+
+.form-text{
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 32px;
+  letter-spacing: 0.4px;
+  text-decoration: none;
+  &:hover{
+    cursor: pointer;
+  } 
+}
+
+.p-red{
+color: #d24d57;
+}
+
+
