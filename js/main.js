@@ -41,7 +41,7 @@ function check_box() {
 
 checkbox.addEventListener('click', check_box);
 
-// formText.addEventListener('click', check_box);
+formText.addEventListener('click', check_box);
 
 //=========== Tick box - 2 ======================
 
@@ -52,8 +52,21 @@ const formText2 = document.querySelector('.form-text-2')
 
 function check_box2() {
     tickbox2.classList.toggle('active');
+    const activeStateInput = document.getElementById('form-checkbox');
+    activeStateInput.value = tickbox2.classList.contains('active') ? '1' : '0';
 }
 
-checkbox2.addEventListener('click', check_box2);
+function toggleActive(tickbox2) {
+    // const tickbox2 = document.querySelector('.custom-tickbox-2');
+    // Toggle the .active class on the span
+    tickbox2.classList.toggle('active');
+
+    // Update the hidden input value based on the .active class
+    const activeStateInput = document.getElementById('form-checkbox');
+    activeStateInput.value = tickbox2.classList.contains('active') ? '1' : '0';
+}
+
+
+// checkbox2.addEventListener('click', toggleActive);
 
 formText2.addEventListener('click', check_box2);

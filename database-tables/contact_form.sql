@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 29, 2024 at 03:09 PM
+-- Generation Time: Mar 01, 2024 at 12:44 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -33,15 +33,18 @@ CREATE TABLE `contact_form` (
   `company_name` varchar(64) NOT NULL,
   `email` varchar(64) NOT NULL,
   `telephone` varchar(64) NOT NULL,
-  `message` varchar(2000) NOT NULL
+  `message` varchar(2000) NOT NULL,
+  `marketing` varchar(64) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `contact_form`
 --
 
-INSERT INTO `contact_form` (`id`, `name`, `company_name`, `email`, `telephone`, `message`) VALUES
-(96, 'test', 'test co', 'test@test.com', '01493603204', 'Test Message&quot;');
+INSERT INTO `contact_form` (`id`, `name`, `company_name`, `email`, `telephone`, `message`, `marketing`) VALUES
+(117, 'Test McTest', 'test co', 'test@test.com', '01493603204', 'Just a test Message', 'accepted'),
+(118, 'Jane Doe', 'AnonCo', 'jane@anon.com', '01393403205', 'Hi, I need some IT stuff', 'declined'),
+(119, 'Elon Tusk', 'Tuskla', 'elon@tuskla.com', '01603704020', 'Just another test Bro...', 'accepted');
 
 --
 -- Indexes for dumped tables
@@ -61,7 +64,7 @@ ALTER TABLE `contact_form`
 -- AUTO_INCREMENT for table `contact_form`
 --
 ALTER TABLE `contact_form`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=97;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=120;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

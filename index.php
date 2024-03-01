@@ -1,14 +1,10 @@
 <?php
-
   require 'vendor/autoload.php';
-
   $dotenv = DotenvVault\DotenvVault::createImmutable(__DIR__);
   $dotenv->safeLoad();
-
-  // echo "Hello {$_SERVER['HELLO']}";
-
-
-include 'inc/header.php';
+  include 'inc/head.php';
+  include 'inc/navigation.php';
+  include 'inc/cookie.php';
 ?>
 
 

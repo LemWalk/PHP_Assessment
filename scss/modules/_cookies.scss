@@ -27,7 +27,7 @@
 
 
 .cookie-overlay{
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -40,8 +40,8 @@
     overflow: hidden;
 }
 
-.cookie-overlay.hidden{
-    display: none;
+.cookie-overlay.display{
+    display: flex;
 }
 
 .cookie-menu{

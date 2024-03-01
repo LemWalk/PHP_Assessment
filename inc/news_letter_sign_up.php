@@ -20,10 +20,10 @@
 				</div>
 
 			<div class="checkbox">
-        <span class="custom-tickbox"></span>
+        	    <span class="custom-tickbox"></span>
 				<input type="checkbox" class="tickbox" id="checkbox-id" name="#" value="#">
                 <label for="checkbox-id" class="form-text">Please tick this box if you wish to receive marketing information from us. Please see our <a href="#" class="link-blk">Privacy Policy</a> for more information on how we keep your data safe.</label>
-        </div>
+        	</div>
 
 			<div>
 				<button type="submit" class="btn-blk">SUBSCRIBE</button>

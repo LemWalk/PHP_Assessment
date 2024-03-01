@@ -63,13 +63,32 @@ nav ul li a{
     }    
 }
 
+
+
 .dropdown{
-    position: absolute;
-    left: 0;
-    right: 0;
+    // position: absolute;
+    // left: 0;
+    // right: 0;
     z-index: 3;
     display: none
 }
+
+
+.list-container{
+    position: absolute;
+    left: 0;
+    right: 0;
+    // max-width: 1440px;
+    // margin: 0 auto;
+}
+
+    .container-nav{
+        margin: 0 auto;
+        max-width: 1440px;
+        padding: 0 5%;
+    } 
+    
+
 
 
 .dropdown li{
@@ -261,10 +280,8 @@ nav ul li:hover ul.dropdown {
         text-align: left;  
     }
 
-    .container-nav{
-            padding: 0 7%;
-        }
-    
+
+//============================
     
 
 
@@ -368,4 +385,27 @@ nav ul li:hover ul.dd-orange{
         position: relative;
         float: left;
         font-size: 40px;        
+    }
+
+    .bg-blue-pale{
+        background-color: $blue-pale-secondary
+    }
+    .bg-blue{
+        background-color: $blue-secondary
+    }
+
+    .bg-green{
+        background-color: $green-secondary
+    }
+    .bg-red{
+        background-color: $red-secondary
+    }
+    .bg-red-pink{
+        background-color: $red-pink-secondary
+    }
+    .bg-purple{
+        background-color: $purple-secondary
+    }
+    .bg-orange{
+        background-color: $orange-secondary
     }

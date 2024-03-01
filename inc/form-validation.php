@@ -26,13 +26,9 @@ if (!isset($_SESSION['success']))
     }
 
 
-
-
-
-
 // define variables and set to empty values
 $nameErr = $company_nameErr = $emailErr = $telephoneErr = $messageErr = "";
-$name = $company_name = $email = $telephone = $message = "";
+$name = $company_name = $email = $telephone = $message = $marketing = "";
 $emailRegex = "/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/";
 $telephoneRegex = "/^(?:(?:\+?44\s?(?:\(\d{1,5}\)|\d{1,5})|\d{4}|\d{5})\s?\d{3}\s?\d{3}\s?)$/";
 
@@ -82,7 +78,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         } else {
             $message = test_input($_POST["message"]);
         }
+
+
+        $marketing = test_input($_POST["marketing"]);
+
     
+
+    if ($marketing == 1) {
+        $marketing = 'accepted';
+    } else {
+        $marketing = 'declined';
+    }
     
         if (
             empty($nameErr) &&
@@ -97,8 +103,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     $_SESSION['form_valid'] = true;
 
                     require_once "connection.php";
-                    $query = "INSERT INTO contact_form (name, company_name, email, telephone, message) 
-                    VALUES ( :name , :company_name , :email , :telephone, :message)";            
+                    $query = "INSERT INTO contact_form (name, company_name, email, telephone, message, marketing) 
+                    VALUES ( :name , :company_name , :email , :telephone, :message, :marketing)";            
         
                     $stmt = $conn->prepare($query);
         
@@ -107,6 +113,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     $stmt->bindParam(":email", $email);
                     $stmt->bindParam(":telephone", $telephone);
                     $stmt->bindParam(":message", $message);
+                    $stmt->bindParam(":marketing", $marketing);
                     
                     $stmt->execute();
                 
@@ -127,32 +134,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // header("Location:./contact-us.php#contact-form-lo");
         }
 
-
-
-        // if($_SESSION['form_valid'] == true){
-            // unset($_SESSION['form_valid']);
-            // $_SESSION['form_valid'] == false;
-        // }
-        
-
         session_destroy();
     
-
-//======================================================
-                            
-// <?php if($form_validation == false ) {echo 'hidden';}
-
-//===================================================
-
-
-
-
-
-        // $name = test_input($_POST["name"]);
-        // $company_name = test_input($_POST["company_name"]);
-        // $email = test_input($_POST["email"]);      
-        // $telephone = test_input($_POST["telephone"]);
-        // $message = test_input($_POST["message"]);
-
-
 ?>

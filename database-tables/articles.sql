@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 29, 2024 at 03:07 PM
+-- Generation Time: Mar 01, 2024 at 12:47 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -47,8 +47,8 @@ CREATE TABLE `articles` (
 --
 
 INSERT INTO `articles` (`article_id`, `top_right_colour`, `top_right_text`, `img_src`, `title_colour`, `title_text`, `time_read`, `article_summary`, `button_colour`, `author_img`, `author`, `date_posted`) VALUES
-(1, 'top-right-blue', 'CASE STUDIES', 'img/news-1.png', 'text-blue', 'Staying Secure and Connected With Netmatters -... ', '6', 'Urban Mission Schools and Community (UMSC) is an independent school aiming to re-engage youth...', 'btn-news-blue', 'img/nm-logo-dark-small.png', 'Netmatters', '11th May 2023]'),
-(2, 'top-right-purple', 'CASE STUDIES', 'img/news-2.png', 'text-purple', 'Glaven Valley - Web Case Study', '5', 'The Client - Since 2001, Glaven Valley has been a leading platform for the listing and booking of self-...', 'btn-news-purple', 'img/nm-logo-dark-small.png', 'Netmatters', '10th May 2023'),
+(1, 'top-right-blue', 'CASE STUDIES', 'img/news-1.png', 'text-blue', 'Staying Secure and Connected With Netmatters -... ', '6', 'Urban Mission Schools and Community (UMSC) is an independent school aiming to re-engage youth...', 'btn-news-blue', 'img/nm-logo-dark-small.png', 'Netmatters', '11th May 2023'),
+(2, 'top-right-purple', 'CASE STUDIES', 'img/news-2.png', 'text-purple', 'Glaven Valley - Web Case Study', '5', 'The Client - Since 2001, Glaven Valley has been a leading platform for the listing and booking of self-...', 'btn-news-purple', 'img/nm-logo-dark-small.png', 'Netmatters', '11th May 2023'),
 (3, 'top-right-purple', 'NEWS', 'img/news-3.png', 'text-purple', 'Bethany Shakespeare - Netmatters 5 Year Legend...', '3', 'Today we are congratulating Bethany Shakespeare on achieving the Netmatters Long Service Award and b...', 'btn-news-purple', 'img/nm-logo-dark-small.png', 'Netmatters', '8th May 2023');
 
 --

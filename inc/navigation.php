@@ -1,45 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-
-  <!-- =======================================
-  ===========HEAD ==================== -->
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="js/slick/slick.css">
-<link rel="stylesheet" href="js/slick/slick-theme.css">
-<link rel="stylesheet" href="scss/application.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,600&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/fac1c8a231.js" crossorigin="anonymous"></script>
-<title>Netmatters Reflection</title>
-</head>
-
-  <!-- =======================================
+<!-- =======================================
   ===========BODY - START==================== -->
 
-<body>
+  <body>
   <div class="container-outer">  
 
-    <!-- ========== Cookies ====================== -->
 
-    <div class="btn-manage">Manage Consent</div>
-    <div class="cookie-overlay" id="cookie-lo">
-      <div class="cookie-menu">
-        <div class="cookie-inner">
-          <div><h2 class="cookie-title">Cookies Policy</h2></div>
-          <hr class="cookie-hr">
-          <div><p class="cookie-text">Our website uses cookies. This helps us provide you with a good experience on our website. To see what cookies we use and what they do, and to opt-in on non-essential cookies click "change settings". For a detailed explanation, click on "<span class="policy-text">Privacy Policy</span>" otherwise click "Accept Cookies" to enter.</p></div>
-          <hr class="cookie-hr">
-          <div class = "cookie-btns">
-            <a class="cookie-btn-outer"><div class="btn-ch-set">Change Settings</div></a>
-            <a class="cookie-btn-outer"><div class="btn-acc" id="btn-accept">Accept Cookies</div></a>
-          </div>
-        </div>
-      </div>
-    </div>
 
   <!-- =======================================
   ======== Top-Nav ==================== -->
@@ -108,7 +73,8 @@
             </a>            
           </div>
           
-          <ul class="dropdown dd-blue-pale container-nav">   
+          <div class="list-container bg-blue-pale">
+            <ul class="dropdown dd-blue-pale container-nav">   
                 <li><a href="#" class="link-white"><i class="fa-solid fa-gears" style="color: #fff;"></i>Bespoke CRM</a></li>
                 <li><a href="#" class="link-white"><i class="fa-solid fa-mobile-screen-button" style="color: #fff;"></i>Mobile App Development</a></li>
                 <li><a href="#" class="link-white"><i class="fa-sharp fa-solid fa-download" style="color: #fff;"></i>Operational systems</a></li>
@@ -122,7 +88,7 @@
                 <li><a href="#" class="link-white"><i class="fa-solid fa-tv" style="color: #fff;"></i>Internet of Things (IoT) Development</a></li>
                 <li><a href="#" class="link-white"><i class="fa-sharp fa-solid fa-earth-americas" style="color: #fff;"></i>Reporting Hub</a></li>
               </ul> 
-        
+            </div>
             
           </li> 
 
@@ -138,14 +104,17 @@
               </a>
             </div>
 
-            <ul class="dropdown dd-blue container-nav">  
-              <li><a href="#" class="link-white"><i class="fa-solid fa-headphones" style="color: #fff;"></i>Managed IT Support</a></li>
-              <li><a href="#" class="link-white"><i class="fa-solid fa-briefcase" style="color: #fff;"></i>Business IT Support</a></li>
-              <li><a href="#" class="link-white"><i class="fa-sharp fa-solid fa-laptop" style="color: #fff;"></i>Office 365 for Business</a></li>
-              <li><a href="#" class="link-white"><i class="fa-solid fa-graduation-cap fa-flip-horizontal" style="color: #fff;"></i>IT Consultancy</a></li>
-              <li><a href="#" class="link-white"><i class="fa-solid fa-cloud" style="color: #fff"></i>Cloud Service Provider</a></li>
-              <li><a href="#" class="link-white"><i class="fa-sharp fa-solid fa-hard-drive" style="color: #fff;"></i>Data Backup & Disaster Recovery</a></li>
-            </ul>  
+            <div class="list-container bg-blue">
+              <ul class="dropdown dd-blue container-nav">             
+                <li><a href="#" class="link-white"><i class="fa-solid fa-headphones" style="color: #fff;"></i>Managed IT Support</a></li>
+                <li><a href="#" class="link-white"><i class="fa-solid fa-briefcase" style="color: #fff;"></i>Business IT Support</a></li>
+                <li><a href="#" class="link-white"><i class="fa-sharp fa-solid fa-laptop" style="color: #fff;"></i>Office 365 for Business</a></li>
+                <li><a href="#" class="link-white"><i class="fa-solid fa-graduation-cap fa-flip-horizontal" style="color: #fff;"></i>IT Consultancy</a></li>
+                <li><a href="#" class="link-white"><i class="fa-solid fa-cloud" style="color: #fff"></i>Cloud Service Provider</a></li>
+                <li><a href="#" class="link-white"><i class="fa-sharp fa-solid fa-hard-drive" style="color: #fff;"></i>Data Backup & Disaster Recovery</a></li>
+              </ul> 
+            </div>
+
           </li>
 
 
@@ -161,6 +130,7 @@
               </a>
             </div>
 
+          <div class="list-container bg-green">  
             <ul class="dropdown dd-green container-nav">  
               <li><a href="#" id="dd-item" class="link-white"><i class="fa-solid fa-magnifying-glass" style="color: #fff;"></i>Search Engine Optimisation (SEO)</a></li>
               <li><a href="#" class="link-white"><i class="fa-solid fa-money-bill" style="color: #fff;"></i>Pay Per Click Advertising (PPC)</a></li>
@@ -169,6 +139,7 @@
               <li><a href="#" class="link-white"><i class="fa-solid fa-users" style="color: #fff;"></i>Social Media Marketing</a></li>
               <li><a href="#" class="link-white"><i class="fa-sharp fa-solid fa-pencil" style="color: #fff;"></i>Content Marketing</a></li>
             </ul> 
+          </div>  
 
           </li>                                                 
           
@@ -185,6 +156,7 @@
               </a>
             </div>
 
+          <div class="list-container bg-red">
             <ul class="dropdown dd-red container-nav">  
               <li><a href="#" class="link-white"><i class="fa-solid fa-ticket" style="color: #fff;"></i>Business Mobile</a></li>
               <li><a href="#" class="link-white"><i class="fa-solid fa-phone" style="color: #fff;"></i>Hosted VoIP Provider</a></li>
@@ -193,6 +165,8 @@
               <li><a href="#" class="link-white"><i class="fa-solid fa-handshake" style="color: #fff;"></i>Leased Lines Provider</a></li>
               <li><a href="#" class="link-white"><i class="fa-sharp fa-solid fa-phone-volume" style="color: #fff;"></i>3CX Systems</a></li>
             </ul> 
+          </div>  
+
           </li>
 
 
@@ -208,6 +182,7 @@
               </a>
             </div>
 
+            <div class="list-container bg-purple">
             <ul class="dropdown dd-purple container-nav">  
               <li><a href="#" class="link-white"><i class="fa-solid fa-pencil" style="color: #fff;"></i>Bespoke Website Design</a></li>
               <li><a href="#" class="link-white"><i class="fa-solid fa-cart-shopping" style="color: #fff;"></i>eCommerce Website Design</a></li>
@@ -216,6 +191,7 @@
               <li><a href="#" class="link-white"><i class="fa-solid fa-mobile" style="color: #fff;"></i>Mobile App Development</a></li>
               <li><a href="#" class="link-white"><i class="fa-sharp fa-solid fa-cloud" style="color: #fff;"></i>Web Hosting</a></li>
             </ul>
+            <div>
           </li>
 
 
@@ -230,6 +206,7 @@
               </a>
             </div>
 
+            <div class="list-container bg-red-pink">
             <ul class="dropdown dd-red-pink container-nav">  
               <li><a href="#" class="link-white"><i class="fa-solid fa-paste" style="color: #fff;"></i>Cyber Security Assessment</a></li>
               <li><a href="#" class="link-white"><i class="fa-sharp fa-regular fa-clock" style="color: #fff;"></i>Cyber Security Management</a></li>
@@ -238,6 +215,7 @@
               <li><a href="#" class="link-white"><i class="fa-solid fa-shield-halved" style="color: #fff"></i>PCI Compliance</a></li>
               <li><a href="#" class="link-white"><i class="fa-sharp fa-solid fa-lock" style="color: #fff;"></i>Hacking Prevention</a></li>
             </ul>
+          </div>
           </li>
 
 
@@ -252,12 +230,14 @@
               </a>
             </div>
 
+            <div class="list-container bg-orange">
             <ul class="dropdown dd-orange container-nav">  
               <li><a href="#" class="link-white"><i class="fa-solid fa-laptop" style="color: #fff;"></i>Train For A Career In Tech</a></li>
               <li><a href="#" class="link-white"><i class="fa-solid fa-code" style="color: #fff;"></i>Skills Bootcamp</a></li>
               <li><a href="#" class="link-white"><i class="fa-sharp fa-solid fa-square-phone" style="color: #fff;"></i>Scion Scheme Frequently Asked Questions</a></li>
               <li><a href="#" class="link-white"><i class="fa-solid fa-circle-question" style="color: #fff;"></i>Scion Collaborators</a></li>
-            </ul>            
+            </ul>          
+          </div>
           </li>
 
 
@@ -267,5 +247,3 @@
     </nav>
 
   </div>
-
-

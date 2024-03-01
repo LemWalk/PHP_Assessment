@@ -1,7 +1,13 @@
 <?php
+    require 'vendor/autoload.php';
+    $dotenv = DotenvVault\DotenvVault::createImmutable(__DIR__);
+    $dotenv->safeLoad();
     include 'inc/form-validation.php';
-    include 'inc/header.php';
+    include 'inc/head.php';
+    include 'inc/navigation.php';
+    include 'inc/cookie.php';
 ?>
+
 
 
 <main>  
@@ -276,10 +282,11 @@
                         </div>
 
                         <div class="checkbox-2">
-                            <span class="custom-tickbox-2"></span>
-                                <input type="checkbox" class="tickbox-2" id="checkbox-id" name="#" value="#">
-                                <label for="checkbox-id" class="form-text-2">Please tick this box if you wish to receive marketing information from us. Please see our <a href="#" class="link-blk">Privacy Policy</a> for more information on how we keep your data safe.</label>
+                            <span class="custom-tickbox-2" for="form-checkbox" onclick="toggleActive(this)"></span>
+                            <input type="hidden" id="form-checkbox" name="marketing"  value="0">
+                            <label  class="form-text-2">Please tick this box if you wish to receive marketing information from us. Please see our <a href="#" class="link-blk">Privacy Policy</a> for more information on how we keep your data safe.</label>
                         </div>
+
 
                         <div class="small-print">
                             <p class="small-print-text">This site is protected by reCAPTCHA and the Google <a href="#" class="link-blk">Privacy Policy</a> and <a href="#" class="link-blk">Terms of Service</a> apply.</p>

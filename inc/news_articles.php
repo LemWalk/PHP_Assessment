@@ -2,7 +2,7 @@
 
 include 'connection.php';
 
-$news_articles = $conn->query("SELECT * FROM articles ORDER BY article_id ASC LIMIT 3");
+$news_articles = $conn->query("SELECT * FROM articles ORDER BY date_posted ASC LIMIT 3");
 $article = $news_articles->fetchAll(PDO::FETCH_ASSOC);
 
 foreach($article as $row => $item) {
